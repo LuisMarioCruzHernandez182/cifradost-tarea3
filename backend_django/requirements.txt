@@ -1,0 +1,15 @@
+asgiref==3.8.1
+cffi==1.17.1
+click==8.1.7
+colorama==0.4.6
+cryptography==43.0.1
+Django==4.2.16
+django-cors-headers==4.4.0
+gostcrypto==1.2.5
+pycparser==2.22
+pycryptodome==3.20.0
+serpent==1.41
+typing_extensions==4.12.2
+tzdata==2024.2
+gunicorn==20.1.0
+whitenoise==6.4.0

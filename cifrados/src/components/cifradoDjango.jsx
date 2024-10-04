@@ -52,7 +52,7 @@ console.log(resultadosCifrado)
     e.preventDefault();
     if (validarFormulario()) {
       try {
-        const response = await fetch('http://localhost:3001/encryption/submit/', {
+        const response = await fetch('https://cifradost-tarea3.onrender.com/encryption/submit/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -93,7 +93,7 @@ console.log(resultadosCifrado)
   const manejarDescifrado = async () => {
     if (resultadosCifrado) {
       try {
-        const response = await fetch('http://localhost:3001/encryption/decrypt/', {
+        const response = await fetch('https://cifradost-tarea3.onrender.com/encryption/decrypt/', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

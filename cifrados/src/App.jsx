@@ -4,6 +4,7 @@ import CifradoEscitala from './components/cifradoEscitala';
 import FormularioExpress from './components/cifradoExpress';
 import FormularioDjango from './components/cifradoDjango';
 import AcercaDe from './components/acercaDe'; // Asegúrate de importar el nuevo componente
+import ComparacionFrameworks from './components/comparacionFrameworks';
 
 function App() {
   const [componenteActivo, setComponenteActivo] = useState('cesar');
@@ -54,6 +55,12 @@ function App() {
             Cifrado Django
           </button>
           <button
+            onClick={() => setComponenteActivo('comparacion')}
+            className={`py-2 px-4 rounded-lg ${componenteActivo === 'comparacion' ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}
+          >
+            Comparacion
+          </button>
+          <button
             onClick={() => setComponenteActivo('acerca')}
             className={`py-2 px-4 rounded-lg ${componenteActivo === 'acerca' ? 'bg-blue-500 text-white' : 'bg-gray-300'}`}
           >
@@ -66,6 +73,7 @@ function App() {
           {componenteActivo === 'escitala' && <CifradoEscitala modoOscuro={modoOscuro} />}
           {componenteActivo === 'express' && <FormularioExpress />}
           {componenteActivo === 'django' && <FormularioDjango />}
+          {componenteActivo === 'comparacion' && <ComparacionFrameworks modoOscuro={modoOscuro} />}
           {componenteActivo === 'acerca' && <AcercaDe />}
         </div>
       </div>

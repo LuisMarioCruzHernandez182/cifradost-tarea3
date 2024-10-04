@@ -6,6 +6,26 @@ const AcercaDe = () => {
       <h2 className="text-2xl font-bold text-center mb-4 dark:text-white">Acerca de los métodos de cifrado</h2>
 
       <div className="mb-6">
+        <h3 className="text-xl font-semibold dark:text-gray-300">Autor:</h3>
+        <p className="text-gray-700 dark:text-gray-200">
+          <span className='font-bold'> ALUMNO:</span>
+          Luis Mario Cruz Hernandez.
+        </p>
+        <p className="text-gray-700 dark:text-gray-200">
+        <span className='font-bold'> CUATRIMESTRE Y GRUPO:</span>
+          7 A
+        </p>
+        <p className="text-gray-700 dark:text-gray-200">
+        <span className='font-bold'> CARRERA:</span>
+          Ingeniería en desarrollo y gestión de software
+        </p>
+        <p className="text-gray-700 dark:text-gray-200">
+        <span className='font-bold'> UNIVERSIDAD: </span>
+        Universidad Tecnológica de la Huasteca Hidalguense
+        </p>
+      </div>
+
+      <div className="mb-6">
         <h3 className="text-xl font-semibold dark:text-gray-300">Cifrado César:</h3>
         <p className="text-gray-700 dark:text-gray-200">
           El Cifrado César es una técnica de cifrado por sustitución en la que cada letra del texto claro se sustituye por otra letra que se encuentra un número fijo de posiciones más adelante en el alfabeto. 
@@ -22,10 +42,9 @@ const AcercaDe = () => {
       </div>
 
       <div className="mb-6">
-        <h3 className="text-xl font-semibold dark:text-gray-300">Cifrado Simétrico:</h3>
+        <h3 className="text-xl font-semibold dark:text-gray-300">Cifrado Simétrico Serpent:</h3>
         <p className="text-gray-700 dark:text-gray-200">
-          El cifrado simétrico utiliza la misma clave para cifrar y descifrar la información. Esto significa que tanto el emisor como el receptor deben tener acceso a la misma clave secreta. 
-          Ejemplos de algoritmos de cifrado simétrico incluyen AES (Advanced Encryption Standard) y DES (Data Encryption Standard).
+          El cifrado simétrico utiliza la misma clave para cifrar y descifrar la información.
         </p>
       </div>
 

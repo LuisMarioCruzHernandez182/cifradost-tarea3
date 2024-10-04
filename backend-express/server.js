@@ -7,7 +7,7 @@ const { gostCrypto, gostEngine } = require('node-gost-crypto');
 const app = express();
 
 app.use(cors({
-    origin: ['https://LuisMarioCruzHernandez182.github.io', 'http://localhost:5173'],
+    origin: ['https://LuisMarioCruzHernandez182.github.io', 'http://localhost:5174'],
     credentials: true
 }));
 
